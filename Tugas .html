@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Asal-usul Donat</h2>
+        </div>
+
+        <div class="left" style="background-color: #4d4d4d;">Donat, atau doughnuts kudapan manis sederhana ini pernah begitu populer di tahun 1990-an setelah gerai waralaba donat asal Amerika hadir di Indonesia di tahun 1985. Kudapan berbentuk bulat dengan lubang pada bagian tengahnya serta berbagai topping yang membuat donat memang nikmat dijadikan camilan dan bisa dinikmati setiap saat, apalagi saat disajikan hangat. Selain bisa dijadikan  sebagai salah satu makanan pengganjal perut saat lapar donat juga bisa jadi pilihan menu untuk sarapan. Selain nikmat, donat juga cukup praktis yang bisa dinikmati sebagai pengganti roti.
+
+            Hingga saat ini asal usul donat masih diperdebatkan. Karena konsep adonan roti yang digoreng tidak dimiliki secara eksklusif oleh salah satu Negara atau budaya dan variasi sajian mirip donat terdapat di seluruh dunia. Meski begitu ada beberapa peristiwa yang menonjol dalam sejarah lahirnya donat seperti yang kita kenal sekarang.</div>
+        <div class="middle" style="background-color: #c5aa0f;">
+            <img src="donat.jpg" width="600">
+        </div>
+        <div class="right" style="background-color: #4d4d4d;"> Bermula Dari Donat Belanda
+
+            Catatan sejarah menunjukkan bahwa Belanda membuat olykoeks, atau diartikan sebagai "kue minyak," pada awal abad ke-19. Donat awal ini hanyalah bola kue yang digoreng dengan lemak babi hingga berwarna cokelat keemasan. Karena bagian tengah kue tidak matang secepat bagian luarnya, kue semacam roti goreng ini biasanya diisi dengan buah, kacang, atau isian lain yang tidak perlu dimasak. Kismis adalah paduan yang sering digunakan sebagai isian.
+            
+            Ketika imigran Belanda mulai menetap di Amerika Serikat, tradisi mereka membuat olykoeks terus dilakukan yang kemudian dipengaruhi oleh budaya lain dan terus bermetamorfosis menjadi donat yang kita kenal saat ini.
+            
+            Asal-usul bentuk yang dari donat Belanda yang hanya berbentuk bulat menjadi memiliki lubang pada bagian tengahnya adalah berkat Hansen Gregory, seorang kapten kapal Amerika pada tahun 1847. Dia membuat solusi dari donat Belanda yang berbentuk bulat karena sedikit lengket serta tidak perlu memasak isiannya. Gregory membuat lubang di tengah pada adonan sebelum digoreng. Lubang ini juga meningkatkan area permukaan yang terkena minyak panas sehingga mengindari bagian tengah masih mentah. Dimana lubang ini terinspirasi dari kemudi kapal. Jadilah bentuk donat klasik dengan lubang di tengah.</div>
+
+        <div class="footer">
+            <p>doughnuts</p>
+        </div>
+        </div>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body {
+
+            }
+
+            .header {
+                grid-area: header;
+                background-color:#f3cb1b;
+                padding:30px;
+                text-align: center;
+                font-size: 35px;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                'header header header header header header'
+                'left middle middle middle middle right'
+                'footer footer footer footer footer footer';
+            }
+            .left,
+            .middle,
+            .right {
+                padding: 10px;
+            }
+
+            .left {
+                grid-area: left;
+                color:rgb(182, 182, 182);
+                
+            }
+
+
+            .middle {
+                grid-area: middle;
+            }
+
+            .right {
+                grid-area: right;
+                color:rgb(182, 182, 182);
+            }
+
+            .footer {
+                grid-area: footer;
+                background-color:#f3cb1b;
+                padding: 10px ;
+                text-align :center ;
+            }
+
+            @media (max-width: 600px) {
+                .grid-container {
+            grid-template-areas:
+            'header header header header header header'
+            'left left left left left left'
+            'middle middle middle middle middle middle'
+            'right right right right right right'
+            'footer footer footer footer footer footer';
+                }
+            }
+        </style>
+</body>
+</html>
